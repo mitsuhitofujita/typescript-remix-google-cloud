@@ -29,7 +29,8 @@ CI/CD: GitHub Actions
 フロントエンドツール: Vite
 Webフレームワーク: Remix
 レンダリング手法: SSR
-CSSフレームワーク: UnoCSS
+CSSフレームワーク: Tailwind CSS
+バックエンドフレームワーク: Express
 リンター・フォーマッター: biome
 データベース: Cloud Firestore
 認証: Google認証
