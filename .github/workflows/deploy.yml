@@ -36,7 +36,7 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
-      - run: pnpm install
+      - run: pnpm install --no-frozen-lockfile
       - run: pnpm --filter web build
 
       - id: auth
