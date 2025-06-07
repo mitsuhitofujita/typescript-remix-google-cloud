@@ -1,3 +1,18 @@
 # TypeScript Remix Google Cloud
 
 This project provides a Remix application written in TypeScript that is ready to deploy on Google Cloud.
+
+## GitHub secrets
+
+Set the following secrets for the deployment workflow:
+
+```
+PROJECT_ID=<GOOGLE CLOUD PROJECT ID>
+PROJECT_NUMBER=<GOOGLE CLOUD PROJECT NUMBER>
+SERVICE_ACCOUNT_NAME=<GOOGLE CLOUD SERVICE ACCOUNT NAME>
+SERVICE_ACCOUNT_EMAIL=${SERVICE_ACCOUNT_NAME}@${PROJECT_ID}.iam.gserviceaccount.com
+WORKLOAD_IDENTITY_POOL_ID=<GOOGLE CLOUD WORKLOAD IDENTITY POOL ID>
+WORKLOAD_IDENTITY_PROVIDER=<GOOGLE CLOUD WORKLOAD IDENTITY PROVIDER>
+REGION=<DEPLOYMENT REGION>
+ARTIFACT_REGISTRY_REPOSITORY=${REGION}-docker.pkg.dev/${PROJECT_ID}/web-repos
+```
